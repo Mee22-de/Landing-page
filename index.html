@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthyLife Medical Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background:#f4f8fb;
+    color:#333;
+}
+
+
+header{
+    background:#0f766e;
+    padding:16px 40px;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+nav h1{
+    color:#fff;
+    font-size:22px;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:22px;
+}
+nav ul li a{
+    color:#e6fffa;
+    text-decoration:none;
+    font-size:15px;
+}
+nav ul li a:hover{
+    text-decoration:underline;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    gap:40px;
+    padding:80px 60px;
+    background:#ffffff;
+}
+.hero-text h2{
+    font-size:36px;
+    margin-bottom:15px;
+    color:#0f766e;
+}
+.hero-text p{
+    font-size:17px;
+    line-height:1.7;
+    color:#555;
+}
+.hero-box{
+    background:#e6fffa;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:600;
+    color:#065f46;
+}
+
+.services{
+    padding:70px 60px;
+    background:#f0fdfa;
+}
+.services h3{
+    text-align:center;
+    font-size:26px;
+    margin-bottom:40px;
+    color:#0f766e;
+}
+.service-list{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.service{
+    background:#ffffff;
+    padding:30px;
+    border-radius:8px;
+    border-left:6px solid #0f766e;
+}
+.service h4{
+    margin-bottom:10px;
+    color:#0f766e;
+}
+.service p{
+    font-size:14px;
+    color:#555;
+}
+
+@media(max-width:900px){
+    .hero{
+        grid-template-columns:1fr;
+        padding:60px 30px;
+    }
+    .service-list{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>HealthyLife Medical</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h2>Your Trusted Medical Store</h2>
+<p>
+HealthyLife Medical Store provides genuine medicines, healthcare products,
+and medical supplies with a focus on quality and customer care.
+</p>
+</div>
+<div class="hero-box">
+24×7 Medicine Availability
+</div>
+</section>
+
+<section class="services">
+<h3>Our Services</h3>
+
+<div class="service-list">
+<div class="service">
+<h4>Prescription Medicines</h4>
+<p>Wide range of doctor-prescribed medicines from trusted brands.</p>
+</div>
+
+<div class="service">
+<h4>Healthcare Products</h4>
+<p>Medical equipment, wellness products, and daily healthcare needs.</p>
+</div>
+
+<div class="service">
+<h4>Expert Guidance</h4>
+<p>Qualified staff to assist you with medicine and dosage information.</p>
+</div>
+</div>
+</section>
+
+</body>
+</html>
